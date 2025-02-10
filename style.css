@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+.header {
+    background-color: #d60000;
+    color: white;
+    padding: 20px;
+    font-size: 30px; /* Increased font size */
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word; /* Ensure text doesn't overflow */
+    width: 100%; /* Ensure header takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Main Container */
+.container {
+    width: 90%; /* Full width with 10% margin */
+    max-width: 100%; /* Ensure it does not exceed screen width */
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Box Styling */
+.box {
+    background: #ffecec;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 22px; /* Increased font size */
+    font-weight: bold;
+    color: #333;
+}
+
+.value {
+    font-size: 26px; /* Increased font size */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Timer */
+.timer {
+    color: red;
+    font-size: 30px; /* Increased font size */
+    font-weight: bold;
+}
+
+/* Big Result */
+.big {
+    font-size: 36px; /* Increased font size */
+    color: green;
+    font-weight: bold;
+}
+
+/* Table */
+.table {
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Prevent horizontal scrolling */
+}
+
+.table th {
+    background: #d60000;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 24px; /* Slightly smaller for tablets */
+        padding: 15px;
+    }
+
+    .container {
+        width: 95%; /* Full width with slight margin */
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .value {
+        font-size: 22px;
+    }
+
+    .timer {
+        font-size: 26px;
+    }
+
+    .big {
+        font-size: 30px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .table {
+        margin-top: 25px;
+    }
+}
+
+/* Extra Small Mobile Screens */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 22px; /* Slightly smaller for very small screens */
+        padding: 12px;
+    }
+
+    .container {
+        width: 100%; /* Full width on small screens */
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .timer {
+        font-size: 24px;
+    }
+
+    .big {
+        font-size: 28px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
